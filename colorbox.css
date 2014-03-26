@@ -1,8 +1,8 @@
-/*
+
     Colorbox Core Style:
     The following CSS is consistent between example themes and should not be altered.
 */
-#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;background: url('../Images/loading1.gif') 50% 50% no-repeat rgb(249,249,249);}
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:109999; overflow:hidden;}
 #cboxWrapper {max-width:none;}
 #cboxOverlay{position:fixed; width:100%; height:100%;}
 #cboxMiddleLeft, #cboxBottomLeft{clear:left;}
@@ -20,7 +20,7 @@
     Change the following styles to modify the appearance of Colorbox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
-#cboxOverlay{background:#fff;}
+#cboxOverlay{background:#2e2e2e;}
 #colorbox{outline:0;}
     #cboxTopLeft{width:25px; height:25px; background:url(images/border1.png) no-repeat 0 0;}
     #cboxTopCenter{height:25px; background:url(images/border1.png) repeat-x 0 -50px;}
@@ -74,9 +74,9 @@
 .event_popup h1,.event_popup h2,.event_popup h3,.event_popup h4,.event_popup h5,.event_popup h6, .event_popup p, .event_popup span, .event_popup {color: #000;}
 .img-viewport-medium{width: 65px;height: 65px;padding: 5px;}
 .img-viewport-medium img{width: 100%; height: 100%;}
-.pop-event-patch{height: 70px; padding: 15px 50px; -webkit-border-radius: 0 0 3px 3px;-moz-border-radius: 0 0 3px 3px; border-radius: 0 0 3px 3px;box-shadow: 0px 2px 4px rgba(80, 80, 80, 0.61);-moz-box-shadow: 0px 2px 4px rgba(80, 80, 80, 0.61); -webkit-box-shadow: 0px 2px 4px rgba(80, 80, 80, 0.61);width: 320px;margin-left: auto;margin-right: auto;color: #000;
+.pop-event-patch{height: 70px; padding: 15px 50px; -webkit-border-radius: 0 0 3px 3px;-moz-border-radius: 0 0 3px 3px; border-radius: 0 0 3px 3px;box-shadow: 0px 2px 4px rgba(80, 80, 80, 0.61);-moz-box-shadow: 0px 2px 4px rgba(80, 80, 80, 0.61); -webkit-box-shadow: 0px 2px 4px rgba(80, 80, 80, 0.61);width: 309px;margin-left: auto;margin-right: auto;color: #000;
 text-align: left;}
-.tile-event-pop{width: 320px !important;}
+.tile-event-pop{width: 309px !important;}
 .pop-event-patch button{margin-right: 5px;}
 .pop-event-friends-list{width: 309px;margin-left: auto;margin-right: auto;padding: 10px;}
 .pop-event-friends-list p{float: left;}
@@ -84,7 +84,7 @@ text-align: left;}
 .img-small-viewport img{height:100%;float: left;padding-right: 5px;}
 .pop_event_holder{}
 .pop_event_info{color: #000;display: table;padding: 20px;}
-.pop-event-outer{float: left;border-right: 1px solid rgba(0, 0, 0, 0.24);height: 430px;}
+.pop-event-outer{float: left;border-right: 1px solid rgba(0, 0, 0, 0.24);height: 430px;height: auto;}
 .pop_event_title{margin-top: 10px;}
 .pop-no-margin{margin: 0px !important;}
 #cboxContent{border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;}
@@ -103,3 +103,401 @@ text-align: left;}
 @media (max-width: 766px) {
     .pop-event-outer{border-right: 1px solid rgba(0, 0, 0, 0);}
 }
+
+
+
+
+
+
+/********************** css added for pop flow events ************************/
+/*a:focus {outline: none;}*/
+/*.has_recommended_img1{float: left;}
+.has_recommended_img2{float: right;}*/
+.pop_has_recommended{width: 309px;}
+.no-wrap{white-space: nowrap;}
+.p_recommended{width: 170px;}
+.voucher{background-image: url(../img/bg-voucher.png);width: 150px;background-size: 100% 100%;height: 100px;padding: 10px;cursor: pointer;}
+#hr-voucher{position: relative;top: 40px;}
+.btn-grp{position: relative;top: 30px;float: right;padding: 10px;}
+.img-viewport-voucher{width: 55px;height: 65px;padding: 5px;}
+.img-viewport-voucher img{width: 100%; height: 100%;}
+.pop_voucher_vault{display: table;padding: 20px 10px 20px 30px;}
+a.voucher_active:active .voucher, a.brand_active:active .brand{ border: 5px solid rgba(255, 173, 187, 0.67); }
+.div-amount{margin:10px;}
+.div-amount img{margin-right: 20px;}
+.div-amount input, .div-amount textarea{background-color: #f2f2f2;border:0px;padding: 10px;}
+
+
+/*********************** css for video *********************************************/
+.video_holder{width: 250px;
+padding: 10px;
+float: left;
+border: 1px solid rgb(211, 204, 204);margin-right: 50px;}
+.video_holder video{width: 100%;}
+.event_more_info{margin: 30px 20px;}
+.patch-pop-event{background-image: url(../img/patch-pop-event.png);background-size: 100% 120% !important;height: 70px;
+padding: 15px 50px;
+-webkit-border-radius: 0 0 3px 3px;
+-moz-border-radius: 0 0 3px 3px;
+border-radius: 0 0 3px 3px;
+box-shadow: 0px 2px 4px rgba(80, 80, 80, 0.61);
+-moz-box-shadow: 0px 2px 4px rgba(80, 80, 80, 0.61);
+-webkit-box-shadow: 0px 2px 4px rgba(80, 80, 80, 0.61);
+width: 309px;
+margin-left: auto;
+margin-right: auto;
+color: #000;
+text-align: left;}
+.patch-pop-event button{margin-right: 5px;}
+#pop_event_birthday .pop-event-outer{height: 430px;}
+
+.pop_voucher_vault{display: table;}
+.pop_birthday_flow .pop-event-outer{height: auto;}
+
+#pop_birthday_voucher .pop-event-outer, .pop_voucher_vault{margin: 2%;}
+#pop_birthday_recommendation .pop-event-outer, #pop_birthday_contribution .pop-event-outer{margin: 2%;}
+
+
+/* for mobile only */
+@media (max-width: 767px) {
+    #pop_event .pop_event_holder { margin-left: auto; margin-right: auto; width: 325px; }
+    #btn-recommend-dismiss{margin: 10px;}
+}
+
+@media (min-width: 767px) {
+    #pop_birthday_contribution .pop_voucher_vault{width: 100%}
+    #btn-recommend-dismiss{margin: 10px;}
+    /*.pop-event-outer{height: auto;}*/
+}
+@media (min-width: 992px) {
+    #pop_birthday_contribution .pop_voucher_vault{width: 54%}
+}
+@media (min-width: 1200px) {
+    #pop_birthday_contribution .pop_voucher_vault{width: 63%}
+}
+
+
+
+/*********************** for the voucher slider in the pop up*********************************/
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+  position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    *zoom: 1;
+}
+
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+    /*-moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border: solid #fff 5px;*/
+    left: -5px;
+    /*background: #fff;*/
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url(images/bx_loader.gif) center center no-repeat #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+    /*left: 200px;*/
+    /*margin: 20px;*/
+    margin-top: 20px;
+    background: url(../img/wqErEA0zS26OyIMLds5h_controls2.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+    /*right: 200px;*/
+    /*margin: 20px;*/
+    margin-top: 20px;
+    background: url(../img/wqErEA0zS26OyIMLds5h_controls2.png) no-repeat -43px 0px;
+}
+
+.bx-wrapper .bx-prev:hover {
+    background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+    background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    /*top: 50%;
+    margin-top: -16px;*/
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+    text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    background: url(../img/uIjkU2IkRa2DNqP0vZf1_controls1.png) -86px -11px no-repeat;
+    margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+    background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    background: url(../img/uIjkU2IkRa2DNqP0vZf1_controls1.png) -86px -44px no-repeat;
+    margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+    background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #666\9;
+    background: rgba(80, 80, 80, 0.75);
+    width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+}
+
+/********************************** custom css *********************************************/
+.bx-pager{
+  display:none;
+}
+.bx-wrapper{  margin: 0 auto 0px; display: table;}
+/*.bx-viewport{width:86% !important;}*/
+.bx-viewport{height: 100px !important;}
+.slide .bx-clone{width: auto !important;}
+div.slider1 > div.slide{width: auto !important;}
+
+/* this is for slider navigation on mobiles*/
+    .bx-wrapper .bx-prev{left: 20px;}
+    .bx-wrapper .bx-next {left: 70px;}
+    #pop_birthday_recommendation .bx-wrapper .bx-prev{left: 20px;}
+    #pop_birthday_recommendation .bx-wrapper .bx-next{left: 70px;}
+
+@media (min-width: 767px) {
+    .bx-wrapper .bx-prev{left: 120px;}
+    .bx-wrapper .bx-next {left: 170px;}
+    #pop_birthday_recommendation .bx-wrapper .bx-prev{left: 80px;}
+    #pop_birthday_recommendation .bx-wrapper .bx-next{left: 130px;}
+}
+
+@media (min-width: 992px) {
+    .bx-wrapper .bx-prev{left: 120px;}
+    .bx-wrapper .bx-next {left: 170px;}
+    #pop_birthday_recommendation .bx-wrapper .bx-prev{left: 120px;}
+    #pop_birthday_recommendation .bx-wrapper .bx-next{left: 170px;}
+}
+
+@media (min-width: 1200px) {
+    .bx-wrapper .bx-prev{left: 280px;}
+    .bx-wrapper .bx-next {left: 340px;}
+    #pop_birthday_recommendation .bx-wrapper .bx-prev{left: 280px;}
+    #pop_birthday_recommendation .bx-wrapper .bx-next{left: 340px;}
+}
+
+
+
+
+
+
+/************************************** radio button ******************************************************/
+
+
+
+
+/* iCheck plugin Polaris skin
+----------------------------------- */
+.icheckbox_polaris,
+.iradio_polaris {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 29px;
+    height: 29px;
+    background: url(../img/201Fu7cQJO1J4AJBglX9_polaris1.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_polaris {
+    background-position: 0 0;
+}
+    .icheckbox_polaris.hover {
+        background-position: -31px 0;
+    }
+    .icheckbox_polaris.checked {
+        background-position: -62px 0;
+    }
+    .icheckbox_polaris.disabled {
+        background-position: -93px 0;
+        cursor: default;
+    }
+    .icheckbox_polaris.checked.disabled {
+        background-position: -124px 0;
+    }
+
+.iradio_polaris {
+    background-position: -155px 0;
+}
+    /*.iradio_polaris.hover {
+        background-position: -186px 0;
+    }*/
+    .iradio_polaris.checked {
+        background-position: -217px 0;
+    }
+    .iradio_polaris.disabled {
+        background-position: -248px 0;
+        cursor: default;
+    }
+    .iradio_polaris.checked.disabled {
+        background-position: -279px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_polaris,
+    .iradio_polaris {
+        background-image: url(../img/XBwL4JnRWiOvnCdW2Yqg_polaris@2x1.png);
+        -webkit-background-size: 310px 31px;
+        background-size: 310px 31px;
+    }
+}
+
+
+/************ radio button ***********/
+.contrib_placeholder{
+    width: 100%;
+height: 60px;
+/* background-color: #E6E6E6; */
+background-color: #f2f2f2;    
+border:0px;
+}
+.icheckbox_polaris{vertical-align: top;float: left;}
